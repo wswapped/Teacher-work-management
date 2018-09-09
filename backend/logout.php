@@ -1,0 +1,10 @@
+<?php
+ session_start();
+ session_unset();
+ session_destroy();
+ unset($_SESSION['teacher_username']);
+ unset($_SESSION['teacher_passwords']);
+ unset($_SESSION['teacher_id']);
+ header("location:../login.php?logout=succes");
+exit();
+  ?>
